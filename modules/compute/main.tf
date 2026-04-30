@@ -52,9 +52,9 @@ resource "aws_instance" "web" {
   vpc_security_group_ids      = [aws_security_group.web.id]
   associate_public_ip_address = true
 
-  user_data = templatefile("${path.module}/user_data.sh", {
-    web_message = var.web_message
-  })
+user_data = templatefile("${path.module}/user_data.sh", {
+  owner = var.owner
+})
 
   tags = {
     Name = "${var.name_prefix}-web-server"
