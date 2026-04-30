@@ -1,0 +1,5 @@
+aws_region   = "us-east-1"
+project_name = "iac-homework-terraform"
+environment  = "dev"
+owner        = "Luis Crispim"
+web_message  = "Hi, I am Luis Crispim and this is my IaC"
